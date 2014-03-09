@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="{static}css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/apps.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/app.publicar.css"/>
+<link rel="stylesheet" type="text/css" href="{static}js/fancybox/jquery.fancybox.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/jquery.jmenu.css"/>
+</head>
+<body>
+  {HEADER}  
+  <div class="contenido">
+    <h1>Publica tu propiedad</h1>
+    <div class="registro"> 
+	
+    <div class="box box-img">
+      <div class="trash conn" {hide}>Arrastre aquí para eliminar.</div>
+			<div class="titulo">Agregar imágenes</div>
+      <div id="main">
+			   <form method="post" enctype="multipart/form-data" action="publicar_upload_imagenes.php">
+				   <input type="file" name="images" id="images" multiple />
+				   <input type="hidden" name="ID" id="ID" value="{ID}"/>
+				   <input type="hidden" name="IE" id="IE" value="1"/>
+				   <button class="submit select blue">Buscar...</button>
+				   <button type="submit" id="btn" class="submit green">Cargar</button>
+			   </form>            
+		   <div id="response"></div>
+			   <ul id="image-list"></ul>
+		   </div>
+    </div>
+    <div class="box box-img">
+      <div class="titulo">Imágenes de la propiedad <span class="total">({_TOTAL} de {_MAX})</span></div>
+      <div class="blockImages">
+        <ul class="">
+          <!-- BEGIN imgs -->
+          <li class="blkimg" rel="{IDIM}">
+						<div>
+							<a rel="gal" href="{src}">
+								<img src="{src}" />
+							</a>
+						</div>
+          </li>
+          <!-- END imgs -->
+        </ul>
+      </div>
+    </div>
+		
+		<div class="box">
+			<button class="submit white back">Volver</button>
+			<button class="submit save green">Guardar cambios</button>
+			<button class="submit">Finalizar publicación</button>
+		</div>
+	</div>
+  </div>
+  
+  {FOOTER}
+  
+</body>
+<script src="{static}js/jquery-ui/js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="{static}js/jquery-ui/js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+<script src="{static}js/uploader.imagenes.js" type="text/javascript"></script>
+<script src="{static}js/control.imagenes.js" type="text/javascript"></script>
+<script src="{static}js/jquery.jmenu.js" type="text/javascript"></script>
+<script src="{static}js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="{static}js/fancybox/jquery.fancybox.js" type="text/javascript"></script>
+<script>
+	$("a[rel='gal']").fancybox();
+	$(".jMenu").jMenu();
+	$(".back").on("click",function(){
+		window.location='publicar.editar.php?ID={ID}';
+	});
+</script>
+</html>

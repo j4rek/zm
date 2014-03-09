@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="{static}css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/apps.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/app.propiedades.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/jquery.jmenu.css"/>
+</head>
+<body>
+  {HEADER}  
+  <div class="contenido">
+    <h1>Mis Propiedades</h1>
+    <div>
+      <div class="listado">
+        <div class="titulo">Propiedades en Aprobación</div>
+        <ul class="cabeceras">
+          <li class="w160">Tipo propiedad</li>
+          <li>Precio</li>
+          <li class="w160">Operación</li>
+          <li class="w160">Fecha vencimiento</li>
+          <li class="w80">Ficha</li>
+          <li class="w80">Editar</li>
+          <li class="w80">Eliminar</li>
+        </ul>
+        <ul class="data">
+          <!-- BEGIN pendientes -->
+            <li class="w160">{p_tipo}</li>
+            <li>{p_precio}</li>
+            <li class="w160">{p_operacion}</li>
+            <li class="w160">{p_fechaFin}</li>
+            <li class="w80"><a href="{URLBASE}propiedad.php?ID={p_IDPROPIEDAD}"><img src="{static}/img/bo/icono_ficha.png" class="icon" /></a></li>
+            <li class="w80"><a href="{APPS}publicar.editar.php?ID={p_IDPROPIEDAD}"><img src="{static}/img/bo/edit.png" class="icon" /></a></li>
+            <li class="w80"><a href="{APPS}propiedades.borrar.php?ID={p_IDPROPIEDAD}"><img src="{static}/img/bo/papelera_.png" class="icon" /></a></li>
+          <!-- END pendientes -->
+        </ul>
+      </div>
+      <div class="listado">
+        <div class="titulo">Propiedades activas</div>
+        <ul class="cabeceras">
+          <li class="w160">Tipo propiedad</li>
+          <li>Precio</li>
+          <li class="w160">Operación</li>
+          <li class="w160">Fecha vencimiento</li>
+          <li class="w80">Ficha</li>
+          <li class="w80">Editar</li>
+          <li class="w80">Eliminar</li>
+        </ul>
+        <ul class="data">
+          <!-- BEGIN activas -->
+            <li class="w160">{a_tipo}</li>
+            <li>{a_precio}</li>
+            <li class="w160">{a_operacion}</li>
+            <li class="w160">{a_fechaFin}</li>
+            <li class="w80"><a href="{URLBASE}propiedad.php?id={a_IDPROPIEDAD}"><img src="{static}/img/bo/icono_ficha.png" class="icon" /></a></li>
+            <li class="w80"><a href="{APPS}publicar.editar.php?ID={a_IDPROPIEDAD}"><img src="{static}/img/bo/edit.png" class="icon" /></a></li>
+            <li class="w80"><a href="{APPS}propiedades.borrar.php?ID={a_IDPROPIEDAD}"><img src="{static}/img/bo/papelera_.png" class="icon" /></a></li>
+          <!-- END activas -->
+        </ul>
+      </div>
+      <div class="listado">
+        <div class="titulo">Propiedades vencidas</div>
+        <ul class="cabeceras">
+          <li class="w160">Tipo propiedad</li>
+          <li>Precio</li>
+          <li class="w160">Operación</li>
+          <li class="w160">Fecha vencimiento</li>
+          <li class="w80">Ficha</li>
+          <li class="w80">Editar</li>
+          <li class="w80">Eliminar</li>
+        </ul>
+        <ul class="data">
+          <!-- BEGIN caducadas -->
+            <li class="w160">{c_tipo}</li>
+            <li>{c_precio}</li>
+            <li class="w160">{c_operacion}</li>
+            <li class="w160">{c_fechaFin}&nbsp;<a href="{APPS}propiedades.renovar.php?ID={c_IDPROPIEDAD}" class="renovar">Renovar</a></li>
+            <li class="w80"><a href="{URLBASE}propiedad.php?id={c_IDPROPIEDAD}"><img src="{static}/img/bo/icono_ficha.png" class="icon" /></a></li>
+            <li class="w80"><a href="{APPS}publicar.editar.php?ID={c_IDPROPIEDAD}"><img src="{static}/img/bo/edit.png" class="icon" /></a></li>
+            <li class="w80"><a href="{APPS}propiedades.borrar.php?ID={c_IDPROPIEDAD}"><img src="{static}/img/bo/papelera_.png" class="icon" /></a></li>
+          <!-- END caducadas -->
+        </ul>
+      </div>
+      <div class="listado">
+        <div class="titulo">Propiedades borradas</div>
+        <ul class="cabeceras">
+          <li class="w160">Tipo propiedad</li>
+          <li>Precio</li>
+          <li class="w160">Operación</li>
+          <li class="w160">Fecha vencimiento</li>
+          <li class="w80">Ficha</li>
+          <li class="w80">Editar</li>
+          <li class="w80">Eliminar</li>
+        </ul>
+        <ul class="data">
+          <!-- BEGIN borradas -->
+            <li class="w160">{b_tipo}</li>
+            <li>{b_precio}</li>
+            <li class="w160">{b_operacion}</li>
+            <li class="w160">{b_fechaFin}</li>
+            <li class="w80"></li>
+            <li class="w80"></li>
+            <li class="w80"></li>
+          <!-- END borradas -->
+        </ul>
+      </div>
+    </div>
+	
+	</div>
+  
+  {FOOTER}
+  
+</body>
+<script src="{static}js/jquery-ui/js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="{static}js/jquery.jmenu.js" type="text/javascript"></script>
+<script>
+  $().ready(function(){
+  $(".jMenu").jMenu();  
+    })
+  
+</script>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="{static}css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/apps.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/app.publicar.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/fancySelect.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/jquery.scrollbar.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/jquery.checkbox.css"/>
+<link rel="stylesheet" type="text/css" href="{static}css/jquery.jmenu.css"/>
+</head>
+<body>
+  {HEADER}  
+  <div class="contenido">
+    <h1>Publica tu propiedad</h1>
+    <form id="formulario" name="formulario" method="post" onsubmit="return frm.validar();">
+      <span class="titulo tp">Tipo de propiedad*</span>
+      <div class="tipoPropiedad">
+        {tipos}
+      </div>
+      <!------------------------------------------------------------------------>
+      <div class="operacion">
+        <span class="titulo op" id="op">Operación*</span>
+        {operacion}
+      </div>
+      <!------------------------------------------------------------------------>
+      <div class="ubicacion">
+        <span class="titulo ub">Ubicación</span>
+        <div class="cuboUbicacion block">
+        <label for="calle">Calle*</label>
+        <input name="calle" id="calle" type="text" />
+        </div>
+      </div>
+      <div class="ubicacion">
+        <div class="cuboUbicacion">
+        <label for="numPropiedad">Número departamento*</label>
+        <input name="numPropiedad" id="numPropiedad" type="text" />
+        </div>
+        <div class="cuboUbicacion numPiso">
+        <label for="numPiso" >Piso</label>
+        <input type="text" name="numPiso" id="numPiso" />
+        </div>
+        <div class="cuboUbicacion">
+        <label for="comunas">Comuna*</label>
+        {comunas}
+        </div>
+				<span class="subtitulo">Georeferencia</span>
+				<div id="geo"></div>
+      </div>
+      <!------------------------------------------------------------------------>
+      <div class="distribucion">
+        <span class="titulo">Distribución</span>
+        <div class="cuboDistribucion numDormitorios">
+        <label for="dormitorios">Dormitorios</label>
+        {dormitorios}
+        </div>
+        <div class="cuboDistribucion numBanos">
+        <label for="banos">Baños</label>
+        {banos}
+        </div>
+        <div class="cuboDistribucion suites">
+        <label for="suites">Suites</label>
+        {suites}
+        </div>
+        <div class="cuboDistribucion numPrivados">
+        <label for="privados">Privados</label>
+        {privados}
+        </div>
+      </div>
+      <!------------------------------------------------------------------------>
+      <div class="superficie">
+        <span class="titulo">Superficie</span>
+        <div class="cuboSuperficie">
+         <label for="mTerreno" class="mtsTerreno">Metros terreno*</label>
+         <input name="mTerreno" id="mTerreno" type="text" />
+        </div><!--
+       --><div class="cuboSuperficie">
+         <label for="mConstruidos" class="mtsConstruidos">Metros construidos</label>
+         <input name="mConstruidos" id="mConstruidos" type="text" class="mtsConstruidos" />
+        </div><!--
+       --><div class="cuboSuperficie">
+         <label for="mTerraza" class="mtsTerraza">Metros terraza</label>
+         <input name="mTerraza" id="mTerraza" type="text" class="mtsTerraza"/>
+        </div><!--
+       --><div class="cuboSuperficie">
+         <label for="mFrente" class="mtsFrente">Metros frente</label>
+         <input name="mFrente" id="mFrente" type="text" class="mtsFrente" />
+        </div><!--
+       --><div class="cuboSuperficie">
+         <label for="mFondo" class="mtsFondo">Metros fondo</label>
+         <input name="mFondo" id="mFondo" type="text" class="mtsFondo" />
+        </div><!--
+       --><div class="cuboSuperficie mtsBodega">
+         <label for="mBodega">Metros bodega</label>
+         <input name="mBodega" id="mBodega" type="text"/>
+        </div>
+      </div>
+      <!------------------------------------------------------------------------>
+      <div class="valor">
+        <span class="titulo">Valor</span>
+        <div class="cuboValor">
+        <label for="precio">Precio propiedad*</label>
+        <input name="precio" id="precio" type="text" placeholder="0,000" />
+        </div>
+        <div class="cuboValor">
+        <label for="divisas">Divisa Precio*</label>
+        {divisas}
+        </div>
+        <div class="cuboValor">
+        <label for="gcomunes">Gastos comunes</label>
+        <input name="gcomunes" id="gcomunes" type="text" />
+        </div>
+        <div class="cuboValor">
+        <label for="divisasc">Divisa gastos comunes</label>
+        {divisasc}
+        </div>
+				<span class="subtitulo">Otros</span>
+        <div class="cuboValor">
+					<div class="cuboChecks">
+						<input type="checkbox" name="precioxmedida" id="precioxmedida" value="1" title="Precio x medida" {chk_m2} />	
+					</div>
+        </div>
+				<div class="cuboValor">
+					<label for="medidas">Medidas</label>
+					{medidas}
+				</div>
+      
+      </div>
+      <!------------------------------------------------------------------------>
+      <div class="caracteristicas">
+        <span class="titulo">Características</span>
+        <div class="checks">{caracteristicas}</div>
+        <!----------------------------------------------------------------->
+        <span class="subtitulo ochars">Otras características</span>
+        <div class="chars">
+          <div class="cuboChars calefaccion">
+            <label for="calefaccion">Calefacción</label>
+            {calefaccion}
+          </div>
+          <div class="cuboChars tipoPiso">
+            <label for="piso">Tipo Piso</label>
+            {pisos}
+          </div>
+          <div class="cuboChars estacionamiento">
+            <label for="estacionamientos">N° Estacionamientos</label>
+            {estacionamientos}
+          </div>
+          <div class="cuboChars numAscensores">
+            <label for="ascensores">N° Ascensores</label>
+            {ascensores}
+          </div>
+          <div class="cuboChars orientacion">
+            <label for="orientacion">Orientación</label>
+            {orientacion}
+          </div>
+          <div class="cuboChars alturaPuerta">
+            <label for="altoPuerta">Altura puerta</label>
+            <input type="text" name="altopuerta" id="altoPuerta" />
+          </div>
+          <div class="cuboChars anchoPuerta">
+            <label for="anchoPuerta">Ancho puerta</label>
+            <input type="text" name="anchopuerta" id="anchoPuerta" />
+          </div>
+          <div class="cuboChars alturaBodega">
+            <label for="altoBodega">Altura bodega</label>
+            <input type="text" name="altobodega" id="altoBodega" />
+          </div>
+        </div>
+      </div>
+      <!------------------------------------------------------------------------>
+      <div class="observaciones">
+        <span class="titulo">Observaciones</span>
+        <textarea name="observaciones" id="observaciones"></textarea>
+      </div>
+      <div class="box">
+        <button class="submit save">Grabar</button>
+      </div>
+    </form>
+  </div>
+	
+  {FOOTER}
+  
+</body>
+<script src="{static}js/jquery-ui/js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="{static}js/fancySelect.js" type="text/javascript"></script>
+<script src="{static}js/jquery.scrollbar.min.js" type="text/javascript"></script>
+<script src="{static}js/jquery.checkbox.js" type="text/javascript"></script>
+<script src="{static}js/jquery.jmenu.js" type="text/javascript"></script>
+<script src="{static}js/app.propiedades.publicar.js" type="text/javascript"></script>
+<script>
+	$("input[name='numPropiedad']").on("blur",function(){
+		if($("input[name='calle']").val().trim()!=""){
+			$.ajax({
+			url:"http://www.zoominmobiliario.com/apps/propiedades/publicar.georeferencia.php",
+			data:{ calle:$("input[name='calle']").val().trim() + " " + $("input[name='numPropiedad']").val().trim()  },
+			method:"GET",
+			cache:false,
+			success:function(html){
+				$("#geo").html(html);
+			}
+			});
+		}
+	});
+</script>
+</html>
