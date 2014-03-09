@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="{URLBASE}" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sistema de pago - www.zoomchile.cl</title>
+<link href="./css/za.css" rel="stylesheet" type="text/css" />
+<link href="./css/ingreso_avisos.css" rel="stylesheet" type="text/css" />
+<link href="./css/gui.css" rel="stylesheet" type="text/css" />
+<link href="./css/mensajes.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--CONTAINER INICIO-->
+<div id="container">
+{HEADER}
+<!--CONTENIDO-->
+<div id="elcontenido">  
+<table width="585" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top">
+	<div id="linken_block">
+		<div class="tit_masnews">Resumen del aviso</div>
+			<ul class="avisos">
+				<li class="titulo">Datos de su Aviso</li>
+				<li><label>Nombres:</label><label class="texto">{nombres}</label></li>
+				<li><label>Apellidos:</label><label class="texto">{apellidos}</label></li>
+				<li><label>RUT:</label><label class="texto">{RUT}</label></li>
+				<li><label>Fono:</label><label class="texto">{Fono}</label></li>
+				<li><label>E-mail:</label><label class="texto">{mail}</label></li>
+				<li><label>Aviso:</label><label class="texto">{aviso}</label></li>
+				<li class="cierre"><label>Valor aviso:</label><label class="texto">{monto}</label></li>				
+			</ul>
+			<form name="frm_webpay" method="post" action="{url_dominio}cgi-bin/tbk_bp_pago.cgi">
+				<input type="hidden" name="TBK_TIPO_TRANSACCION" value="TR_NORMAL"/>
+				<input type="hidden" name="TBK_MONTO" value="{monto_aviso}"/>
+				<input type="hidden" name="TBK_ORDEN_COMPRA" value="{orden_compra}"/>
+				<input type="hidden" name="TBK_ID_SESION" value="{tbk_id_aviso}"/>
+				<input type="hidden" name="TBK_URL_EXITO" size="40" value="{url_exito}"/>
+				<input type="hidden" name="TBK_URL_FRACASO" size=40 value="{url_fracaso}"/>
+				<input type="hidden" name="TBK_MONTO_CUOTA" value="0"/>
+				<input type="hidden" name="TBK_NUMERO_CUOTAS" value="0"/>
+				<div class="confirmar"><input type="submit" value="CONFIRMAR" size="20" class="button red medium"/></div>
+			</form>
+			<div id="box318lf">
+			<a class="pagar" onclick=""><img src="http://www.zoomchile.cl/medios/webpay/img/logo_webpay.jpg" style="width:300px;height:auto;margin-left:165px;" /></a>
+			</div>
+	</div>
+
+    </td>
+  </tr>
+</table>
+</div>
+<!-- FOOTER -->
+{FOOTER}
+<!-- FIN FOOTER -->
+<!--CONTENIDO-->
+</div><!--CONTAINER FIN-->
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/funciones.js" language="javascript"></script>
+</html>

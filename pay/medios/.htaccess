@@ -1,0 +1,14 @@
+RewriteEngine on
+
+# redirect de dominio sin www a www.etc.cl
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# ahorra ancho de banda para servers que tengan habilitada compresion
+<ifmodule mod_php4.c>
+ php_value zlib.output_compression 16386
+</ifmodule>
+
+
+RewriteBase /medios/
+RewriteRule (.*)\.html $1.php

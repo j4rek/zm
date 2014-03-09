@@ -1,0 +1,95 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Confirmar Aviso</title>
+<link href="../../css/estilos.css" rel="stylesheet" type="text/css" />
+<link href="../../css/ingreso_avisos.css" rel="stylesheet" type="text/css" />
+<link href="css/gui.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="./js/jquery.js"></script>
+<script language="javascript" src="./js/avisos.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32990999-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<!--CONTAINER INICIO-->
+<div id="container">
+<!--HEADER-->
+{HEADER}
+<!--HEADER-->
+<div class="cont">
+<div class="col_left">
+	<ul class="avisos">
+		<li class="titulo">Datos de su Aviso</li>
+		<li class="msj"><span class="full">{mensaje}</span></li>
+		<li><label>Nombres:</label><label class="texto">{nombres}</label></li>
+		<li><label>Apellidos:</label><label class="texto">{apellidos}</label></li>
+		<li><label>RUT:</label><label class="texto">{RUT}</label></li>
+		<li><label>Fono:</label><label class="texto">{Fono}</label></li>
+		<li><label>E-mail:</label><label class="texto">{mail}</label></li>
+		<li><label>Titulo:</label><label class="texto">{titulo}</label></li>
+		<li><label>Detalle:</label><label class="texto">{detalle}</label></li>
+		<li class="cierre"><label>Valor aviso:</label><label class="texto">{monto}</label></li>
+		<!-- DATOS AVISO WEBPAY	-->
+			
+		<!-- FIN DATOS AVISO WEBPAY -->
+	</ul>
+	<div id="box318lf" style="width:365px;">
+		<!--datos formu-->
+		<form name="frm_webpay" method="post" action="{url_dominio}/cgi-bin/tbk_bp_pago.cgi"><!-- ACTION="http://www.ironglass.cl/pagos/scgi-bin/tbk_bp_pago.cgi" -->
+			<input type="hidden" name="TBK_TIPO_TRANSACCION" value="TR_NORMAL" />
+			<input type="hidden" name="TBK_MONTO" value="{monto_aviso}" />
+			<input type="hidden" name="TBK_ORDEN_COMPRA" value="{orden_compra}" />
+			<input type="hidden" name="TBK_ID_SESION" value="{tbk_id_aviso}" />
+			<input type="hidden" name="TBK_URL_EXITO" size="40" value="{url_exito}"/>
+			<input type="hidden" name="TBK_URL_FRACASO" size=40 value="{url_fracaso}"/>
+			<input type="hidden" name="TBK_MONTO_CUOTA" value="0" />
+			<input type="hidden" name="TBK_NUMERO_CUOTAS" value="0" />	
+			<input type="submit" value="CONFIRMAR" size="20" class="button red medium"/>
+			
+		</form>
+	</div>
+	<div id="logosWebpay">
+		<img src="./img/Logo_WebPay_Cre_d-Redc(b)3.jpg"/>
+	</div>
+</div>  <!-- fin col_left -->
+<div class="col_right">
+<div id="banner"><a href="../../ingreso_aviso.html"><img src="../../img/bnr_publica.jpg" width="300" height="88" border="0" /></a></div>
+<div id="banner"><a href="#"><img src="../../img/bnr_avisos_imp.jpg" width="300" height="96" border="0" /></a></div>
+<div id="banner"><a href="#"><img src="../../img/bnr_la_cuarta.jpg" width="300" height="96" border="0" /></a></div>
+<div id="titulos"><img src="img/tit_nc.jpg" width="300" height="13" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_1.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_2.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_3.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_4.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_5.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_6.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_7.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_8.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_1.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_2.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_3.jpg" width="92" height="50" border="0" /></div>
+<div id="imgclientes"><img src="../../img/clt_4.jpg" width="92" height="50" border="0" /></div>
+<div class="titulos">&nbsp;</div>
+<div id="banner"><a href="#"><img src="../../img/300_250_1.jpg" width="300" height="250" border="0" /></a></div>
+<div id="banner"><a href="#"><img src="../../img/300_250_2.jpg" width="300" height="250" border="0" /></a></div>
+</div> <!--fin col_right-->
+</div>
+<!--     FOOTER LA CUARTA     -->
+ {footer}
+<!--     FOOTER LA CUARTA     -->
+</div>
+<!--CONTAINER FIN-->
+</body>
+</html>

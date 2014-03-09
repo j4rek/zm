@@ -1,0 +1,29 @@
+<html> 
+<head> 
+<title>Demo Pago WebPay</title> 
+</head>
+<body> 
+	<form method="POST" action="{url_dominio}/cgi-bin/tbk_bp_pago.cgi"><!-- ACTION="http://www.ironglass.cl/pagos/scgi-bin/tbk_bp_pago.cgi" -->	
+		<table border="0" align="center">
+			<tr>
+				<td align="center">
+				
+					<input type="hidden" name="TBK_TIPO_TRANSACCION" value="TR_NORMAL" />
+					<font face="arial" size="3">MONTO&nbsp;</font>
+					<input type="text" name="TBK_MONTO" value="{monto_aviso}" /><br/>&nbsp;<br/>
+					<font face="arial" size="3">ORDEN DE COMPRA : <b>{orden_compra}</b></font>
+					<input type="hidden" name="TBK_ORDEN_COMPRA" value="{orden_compra}" />
+					<br/>&nbsp;<br/>
+					<input type="hidden" name="TBK_ID_SESION" value="{ssesion}" />
+					<input type="hidden" name="TBK_URL_EXITO" size="40" value="{url_exito}"/>
+					<input type="hidden" name="TBK_URL_FRACASO" size=40 value="{url_fracaso}"/>
+					<!--<input type="hidden" name="TBK_MONTO_CUOTA" value="16666,67" />
+					<input type="hidden" name="TBK_NUMERO_CUOTAS" value="6" />-->
+					<input type="submit" value="PAGAR" size="20" />
+					
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

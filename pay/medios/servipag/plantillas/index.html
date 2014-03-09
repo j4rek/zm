@@ -1,0 +1,79 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ingreso Aviso</title>
+<link href="../css/estilos.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="./js/jquery.js"></script>
+<script language="javascript" src="./js/avisos.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32990999-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<!--CONTAINER INICIO-->
+<div id="container">
+<!--HEADER-->
+{HEADER}
+<!--HEADER-->
+<div class="cont">
+<form name="ingreso" id="ingreso" action="guardar_aviso.php" method="post">
+<ul class="avisos">
+	<li class="full"><label class="full">Ingreso de Avisos</label></li>
+	<li class="msj"><span class="full">{mensaje}</span></li>
+	<li><label>Nombres</label><input name="nombres" class="text"></li>
+	<li><label>Apellidos</label><input name="apellidos" class="text"></li>
+	<li><label>RUT</label> <input name="rut" maxlength="8" class="text">-<input name="dv" maxlength="1" class="text" style="width:20px;margin:0px;"></li>
+	<li><label>Fono</label> <input name="fono" class="text"> Mostrar mi número telefónico <input type="checkbox" name="mostrarFono" value="1"></li>
+	<li><label>E-Mail</label> <input name="mail" class="text"></li>
+	<li><label>Titulo corto</label> <input name="titulo" class="text">Ej: Panadero Pastelero Para Amasanderia</li>
+	<li><label>Ciudad</label>
+		<select name="ciudad">
+			<option value="">Seleccione</option>
+			<!-- BEGIN listaCiudades -->
+				<option value="{value_ciudad}">{texto_ciudad}</option>
+			<!-- END listaCiudades -->
+		</select>
+	</li>
+<!--	<li style="display:none;" id="liComuna"><label>Comuna(s)</label>
+		<div class="lstComunas">
+			<input type="checkbox" class="ckall" id="ckall" onClick="check_all()">Todas</option>
+			 BEGIN listaComunas 
+				<div class="optComunas"><input type="checkbox" value="{value_comuna}" name="comunas[]" class="ck">{texto_comuna}</option></div>
+			END listaComunas
+		</div>
+	</li>-->
+	<li><label>Tipo</label>
+		<select name="tipo">
+		<!-- BEGIN listaTipos -->
+			<option value="{value_tipos}">{texto_tipos}</option>
+		<!-- END listaTipos -->
+		</select>
+	</li>
+	<li><label>Desde Impreso</label> <input type="checkbox" name="impreso" value="1"></li>
+	<li><label>Destacado</label> <input type="checkbox" name="destacado" value="1"></li>
+	<li class="detalle"><label>Detalle del aviso</label></li>
+	<li class="editor"><textarea class="ckeditor" id="editor1" name="detalle"></textarea></li>
+	<li><label>Valor aviso</label><input type="text" value="1000" name="MONTO"></li>
+	<input type="hidden" value="1" name="save">
+	<li><input type="submit" value="Grabar"></li>
+</ul>
+</form>
+</div>
+<!--     FOOTER LA CUARTA     -->
+ {footer}
+<!--     FOOTER LA CUARTA     -->
+</div>
+<!--CONTAINER FIN-->
+</body>
+</html>

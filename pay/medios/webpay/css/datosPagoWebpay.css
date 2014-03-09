@@ -1,0 +1,187 @@
+body {
+	font-family: "Verdana", Geneva, sans-serif;
+	color: #222;
+}
+h1{
+	font: bold 17px "Verdana", Geneva, sans-serif;
+	color: #32ABD8;
+	margin-bottom: 5px;
+}
+h2{
+	font-size: 14px;	
+}
+h4{
+	color: #999;
+	font-family: verdana;
+	font-size: 14px;
+}
+#comprobante_pago{
+	font-family: "Verdana", Geneva, sans-serif;
+}
+#comprobante_pago ul{
+	list-style: none;
+	font-size: 12px;
+}
+#comprobante_pago ul li{
+	width: 100%;
+	border: 0px solid #E4E4E4;
+}
+#comprobante_pago ul li label{
+	float: left;
+	width: 200px;
+	color: #000;
+	font-weight: bold;
+}
+#comprobante_pago ul li span{
+	color: #777;
+}
+table{
+	float:left;
+	margin: 0px 0px 40px 0px;
+}
+table.General {
+    font-size: 11px;
+    margin: 0 auto 10px;
+    width: 97%;	
+}
+table.General thead{
+	border: 1px solid rgb(140,0,0);
+}
+table.General thead th{
+    background: rgb(184, 0, 0);
+	border: 1px solid rgb(140, 0, 0);
+	color: #FFF;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+}
+table.General tbody{
+	border: 1px solid rgb(140,0,0);
+}
+table.General tbody td{
+    background: #fff;
+	border: 1px solid #E4E4E4;
+    color: #000000;
+    padding: 3px 10px;
+	text-align:center;
+}
+table.General td a{
+	color:#32ABD8;
+	font-weight:bold;
+}
+.alerta{
+	color: red !important;
+	font-weight: bold !important;
+}
+hr{
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+@charset "UTF-8";
+/* CSS Document */
+
+#emp_box {
+	clear: both;
+	float: none;
+	height: 125px;
+	width: 550px;
+	border: 1px none #DBDBDB;
+	background: #FAF0AB;
+	padding: 15px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+.emp_tit {
+	float:left;
+	margin: 60px 150px;
+	padding: 0px;
+	color: #333333;
+	font: normal 16px "Verdana", Geneva, sans-serif;
+}
+
+#emp_avp {
+	height: 21px;
+	width: 200px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 5px;
+	font: normal 14px Arial, Helvetica, sans-serif;
+	color: #333;
+	margin-left: 100px;
+}
+
+#emp_num {
+	height: 21px;
+	width: 40px;
+	float: left;
+	background: #A5100D;
+	color: #FFFFFF;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-left: 5px;
+	font: bold 16px Arial, Helvetica, sans-serif;
+}
+
+
+#emp_login {
+	height: 126px;
+	width: 280px;
+	background-image:url(../img/bck_lgn.jpg);
+	background-repeat:no-repeat;
+	/*border: 2px solid #000000;
+	background: #FFCC00;*/
+	padding: 10px;
+	margin-bottom: 10px;
+}
+#nota_obs{
+	width: 50px;
+	height: auto;
+	float: left;
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 10px;
+}
+#nota_txt{
+	width: 560px;
+	height: auto;
+	float: left;
+	font-family: Verdana;
+	font-style: italic;
+	font-size: 12px;
+	color: #999;
+	margin: 2px 0px;
+}
+
+
+
+#empresa_logo {
+	width: 92px;
+	height: auto;
+	/* border: 1px solid #3CCAFC; */
+	float:left;
+}
+
+
+#emp_busc {
+	height: 31px;
+	width: 104px;
+	float:right;
+}
+
+#pub_box {
+	clear: both;
+	float: none;
+	height: auto;
+	width: 500px;
+	border: 1px solid #DBDBDB;
+	background: #F3F3F3;
+	padding: 10px;
+	margin-left: 55px;
+	margin-bottom: 20px;
+}

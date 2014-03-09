@@ -1,0 +1,36 @@
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Setea Ruta Llave Privada :./classes/API/keys/private.key 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Setea Ruta Llave Publica :./classes/API/keys/public.key 
+[Tue, 26 Mar 2013 00:07:20 -0400]     0: Realiza ordenamiento:Array 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Funcion GeneraciÛn XML1 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: IdSubTrx 7 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Datos Concatenado :117360201303261500 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: FunciÛn Encripta : 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Obtiene Llave Privada: 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: ----------------------------------- 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Realiza Firmado de los Datos : 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: ------- variable datos: 117360201303261500 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: ------- variable result:  
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: ------- variable llavePrivada: -----BEGIN RSA PRIVATE KEY-----
+MIICXQIBAAKBgQDEDGw+WGRiTaC2oa2g0E4U7kwxbQgzx1UHuRBDzB5BzymsW3T1
+HI5LuJ+7V6nSexfjS+kBUVlOyLunAKW5+Q/4ymXjiyznKBPRA0T0J2EvU71q4kQ9
+2taU5D1lYrWbu6FWweAho1OsHkVIqWUiw0HhNX9zMeTybm6wAj87U5ieJQIDAQAB
+AoGAUSUrMGr5sc6btLwa17Mgfn1bwCF3AaeBxF6PIuC7rVWH1DVOpZ2aMDFMvAg+
+3EXiz0u+N7NqGbfwI+Gatu0l9ISo+S+bFAZTx/LqD3P99inEoDZZyZNAGSYcOlLe
+sjJ1+H+34NBVXimbAh6ATBvBpgBZD0DrIOZf0l58aLMEAQkCQQDjGooSO24f8qRl
+2bX/NSHUkJvcZKIdE12wOoQNdc9fqkRj6Hfafq1E0B7Ba34OOXtcIoOBIHzNjt+t
+2Myoi7pbAkEA3P5Sk+AOBEzA9wSUMClj0GyHzH5sHDJY372knvvWsRbZFbEkQvg6
+8BiywPAf6/+uEHyOM7LoVfP76KyA6B9xfwJBANypZsq8UA5etvn3hezI9WwSbj7A
+0PurW3bmBHUHqUzspbLlp773IugfyCJrjXnIxGILbvdCV8FrN081vfVufs0CQCNb
+GPEJlpR/hxu+AstVw99TjcJcs4UrVOau24iH+AgrBJ4g0hFYz20cNnUBtcm3BS0k
+EEgbJmqh9zp5ZsI8TZcCQQDBlel/quOt3AeRN4dK/eN6Miz59mXWZobIAbXgzuym
+MK69l3sr2WN1WNLzVPiz7Igwvoc+rqaU3MLK/NCS2jeb
+-----END RSA PRIVATE KEY-----
+ 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: ----------------------------------- 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: ------------------Entra dentro del try--------------------- 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Realizado Firmado de los Datos :˛≠úohó¥≈R{”!æñÍ≠eh(
+¯æSIóúJ“ËTµÅWˆ™®h≤Åà*Aóıê∞|n†=W5VCo:à)˙7òsJqV±Ä{B˙⁄ºªŸE˘Ú—"â?çaﬂÎﬂ†?ûπ›)Ÿ_LœÚÊSÜ⁄|G5)^ 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: ----------------------------------- 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Realiza EncriptaciÛn de los Datos :EP6tnB9vaJe0xRNSe9MDIb6W6q1laCgK+L5TSZecStIH6FS1gVf2qqhoDLKBiCpBl/UHkLB8bqA9Vxk1VkNvOogRKRv6N5hzHUpxVrGAe0L62ry7BNlF+fLRIok/jQ1hDhwR3+vfoD+eud0p2V9MEs/y5hAYU4Yd2nxHHwI1KV4= 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: Firma para XML1:EP6tnB9vaJe0xRNSe9MDIb6W6q1laCgK+L5TSZecStIH6FS1gVf2qqhoDLKBiCpBl/UHkLB8bqA9Vxk1VkNvOogRKRv6N5hzHUpxVrGAe0L62ry7BNlF+fLRIok/jQ1hDhwR3+vfoD+eud0p2V9MEs/y5hAYU4Yd2nxHHwI1KV4= 
+[Tue, 26 Mar 2013 00:07:20 -0400]     1: XML1 completo:<?xml version='1.0' encoding='ISO-8859-1'?><Servipag><Header><FirmaEPS>EP6tnB9vaJe0xRNSe9MDIb6W6q1laCgK+L5TSZecStIH6FS1gVf2qqhoDLKBiCpBl/UHkLB8bqA9Vxk1VkNvOogRKRv6N5hzHUpxVrGAe0L62ry7BNlF+fLRIok/jQ1hDhwR3+vfoD+eud0p2V9MEs/y5hAYU4Yd2nxHHwI1KV4=</FirmaEPS><CodigoCanalPago>271</CodigoCanalPago><IdTxCliente>11736</IdTxCliente><FechaPago>20130326</FechaPago><MontoTotalDeuda>0</MontoTotalDeuda><NumeroBoletas>1</NumeroBoletas></Header><Documentos><IdSubTrx>7</IdSubTrx><CodigoIdentificador>50</CodigoIdentificador><Boleta>50</Boleta><Monto>0</Monto><FechaVencimiento>20130326</FechaVencimiento></Documentos></Servipag> 

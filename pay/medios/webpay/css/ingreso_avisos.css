@@ -1,0 +1,200 @@
+#datos{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+#datos span.requerido{
+	float:none;
+	color:red;
+}
+#datos button{
+	color:black;
+	padding:5px;
+	border:1px solid gray;
+	background:whitesmoke;
+	border-radius:4px;
+	margin-right:10px;
+}
+#datos input {
+	border:1px solid lightgray;
+	width:150px;
+	height:16px;
+}
+#datos input[type='checkbox'] {
+	width:auto;
+	margin:0px 0px 0px 0px;
+	*float:right;
+	*border:0px solid blue;
+	*margin:0px 50px 0px 0px;
+}
+#datos select {
+/* 	border:1px solid gray; */
+	width:152px;
+	height:20px;
+	border:1px solid lightgray;	
+	*width:155px;
+}
+
+#datosUser li.titulo{
+	font-size:16px;
+	font-weight:bold;
+	margin:0px 0px 10px 0px;
+	width:90%;
+	border:0px solid red;
+	*width:600px;
+}
+#datosUser li.full{
+	width:90%;
+	height:auto !important;
+}
+
+/* ************************ */
+#datosUser{
+	background:whitesmoke;
+	border:1px solid lightgray;
+	border-radius:5px;
+	padding:5px;
+	margin:0px 0px 10px 0px;
+	float:left;
+	width:95%;
+}
+#datosUser ul{
+	list-style:none;
+	width:90%;
+	height:auto;
+	float:left;
+}
+#datosUser ul li{
+	float:left;
+	margin:5px 10px 0px 10px;
+	height:20px;
+	
+}
+#datosUser ul li div{
+	float:left;
+	margin:0px 0px 0px 0px;
+	height:20px;
+	width:250px;
+	border:0px solid red;
+}
+#datosUser ul li h5{
+	text-transform: capitalize;
+	width:85px;
+	height:14px;
+	float:left;
+	border-right:none;
+	padding:3px 0px 0px 0px;
+	font-size:inherit;
+	font-family:inherit;
+	font-weight:normal;
+	margin:0px;
+}
+#datosUser ul li h6{
+	text-transform: capitalize;
+	width:180px;
+	height:14px;
+	float:left;
+	border-right:none;
+	padding:3px 0px 0px 0px;
+	font-size:inherit;
+	font-family:inherit;
+	font-weight:normal;
+	margin:0px;
+}
+#datosUser ul li label{
+	text-transform: capitalize;
+	width:160px;
+	height:14px;
+	float:left;
+	border-right:none;
+	padding:3px 0px 0px 0px;
+}
+#datosUser ul li textarea{
+	max-width:90%;
+	min-width:90%;
+	max-height:200px;
+	min-height:200px;
+}
+#datosUser li.full label{
+	float:none;
+	
+}
+.importar{
+	border-width:1px;
+	border-style:solid;
+	border-color:#ddd #AAA #ccc #ccc;
+	height:20px;
+	padding:0px 4px;
+	display:block;
+	line-height:20px;
+	border-radius:4px;
+	background:#FBFBFB;
+	cursor:pointer;
+	text-transform:capitalize;
+}
+/* ESTILOS DE PAGINA DE PAGO DEL 1% */
+.titulopago{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+}
+/*------ ESTILOS PAGAR AVISO ------*/
+.avisos{
+	list-style:none;
+	border:1px solid lightgray;
+	width:500px;
+	font-family:"Verdana", Geneva, sans-serif;
+	font-size:12px;
+	padding:4px;
+	float:left;
+	margin:0px 0px 0px 55px;
+	border-radius:4px;
+}
+.avisos .titulo{
+	width:498px;
+	background:darkred;
+	color:white;
+	font-size:16px;
+	text-align:center;
+	font-weight:bold;
+	border-radius:4px 4px 0px 0px;
+}
+.avisos li{
+	border:none;
+	border-right:1px solid lightgray;
+	border-left:1px solid lightgray;
+	padding:3px 0px;
+	width:498px;
+	float:left;
+}
+.avisos li label{
+	width:90px;
+	margin:0px 0px 0px 0px !important;
+	padding:0px 0px 0px 5px;
+	position:relative;
+	float:left;
+	font-weight:bold;
+}
+.avisos li label.texto{
+	font-weight:normal;
+	width:auto;
+}
+.avisos li.cierre{
+	border-bottom:1px solid lightgray;
+	border-radius:0px 0px 4px 4px;
+}
+#warning{
+	border-radius: 4px;
+	background: orangered;
+	float: left;
+	width: 95%;
+	color: white;
+	padding: 5px;
+	border: 1px solid lightgray;
+	margin: 0px 0px 10px 0px;
+	font-size:1.2em;
+}
+#warning span.b{
+	font-weight: bold;
+	margin: 0px 10px 0px 0px;
+	display:inline-block;
+}
