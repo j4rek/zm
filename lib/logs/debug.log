@@ -1,0 +1,65 @@
+[Tue, 05 Nov 2013 10:58:41 -0300] 1: iniciando _img0 
+[Tue, 05 Nov 2013 10:58:41 -0300] 2: foreach 
+[Tue, 05 Nov 2013 10:58:41 -0300] 3: OK - 755328 -.-  
+[Tue, 05 Nov 2013 10:58:41 -0300] 4: img: /tmp/phpr1uRFC 
+[Tue, 05 Nov 2013 11:05:29 -0300] 1: iniciando _img0 
+[Tue, 05 Nov 2013 11:05:29 -0300] 2: foreach 
+[Tue, 05 Nov 2013 11:05:29 -0300] 3: OK - 755328 -.-  
+[Tue, 05 Nov 2013 11:05:29 -0300] 4: img: /tmp/phpOCSH9D 
+[Tue, 05 Nov 2013 11:05:29 -0300] r: RESIZE:755328-departamento-las-condes-1.jpg 
+[Tue, 05 Nov 2013 11:05:29 -0300] c: jpg 
+[Tue, 05 Nov 2013 11:05:29 -0300] c: size: 1000,746 
+[Tue, 05 Nov 2013 11:05:29 -0300] c: temp: Resource id #23 
+[Tue, 05 Nov 2013 11:05:29 -0300] c: ruta:/var/www/html/zoomv2/uploadzoom/propiedades/empresas/ t: 
+[Tue, 05 Nov 2013 11:05:29 -0300] c: archivo: /var/www/html/zoomv2/uploadzoom/propiedades/empresas/755328-departamento-las-condes-1.jpg 
+[Tue, 05 Nov 2013 11:05:29 -0300] c: final http://www.zoominmobiliario.com/uploadzoom/propiedades/empresas/755328-departamento-las-condes-1.jpg:  
+[Tue, 05 Nov 2013 11:05:29 -0300] c: ------------ 
+[Tue, 05 Nov 2013 11:08:27 -0300] 1: iniciando _img0 
+[Tue, 05 Nov 2013 11:08:27 -0300] 2: foreach 
+[Tue, 05 Nov 2013 11:08:27 -0300] 3: OK - 755328 -.-  
+[Tue, 05 Nov 2013 11:08:27 -0300] 4: img: /tmp/php7hpJWl 
+[Tue, 05 Nov 2013 11:08:27 -0300] r: RESIZE:755328-departamento-las-condes-1.jpg 
+[Tue, 05 Nov 2013 11:08:27 -0300] c: jpg 
+[Tue, 05 Nov 2013 11:08:27 -0300] c: size: 1500,710 
+[Tue, 05 Nov 2013 11:08:27 -0300] c: temp: Resource id #24 
+[Tue, 05 Nov 2013 11:08:27 -0300] c: ruta:/var/www/html/zoomv2/uploadzoom/propiedades/ t: 
+[Tue, 05 Nov 2013 11:08:27 -0300] c: archivo: /var/www/html/zoomv2/uploadzoom/propiedades/755328-departamento-las-condes-1.jpg 
+[Tue, 05 Nov 2013 11:08:27 -0300] c: final http://www.zoominmobiliario.com/uploadzoom/propiedades/755328-departamento-las-condes-1.jpg:  
+[Tue, 05 Nov 2013 11:08:27 -0300] c: ------------ 
+[Tue, 05 Nov 2013 11:09:25 -0300] 1: iniciando _img0 
+[Tue, 05 Nov 2013 11:09:25 -0300] 2: foreach 
+[Tue, 05 Nov 2013 11:09:25 -0300] 3: OK - 755328 -.-  
+[Tue, 05 Nov 2013 11:09:25 -0300] 4: img: /tmp/phpJUyalZ 
+[Tue, 05 Nov 2013 11:09:25 -0300] r: RESIZE:755328-departamento-las-condes-1.jpg 
+[Tue, 05 Nov 2013 11:09:25 -0300] c: jpg 
+[Tue, 05 Nov 2013 11:09:25 -0300] c: size: 1250,1000 
+[Tue, 05 Nov 2013 11:09:25 -0300] c: temp: Resource id #24 
+[Tue, 05 Nov 2013 11:09:25 -0300] c: ruta:/home/Zoom/sites/www/uploadzoom/propiedades/empresas/ t: 
+[Tue, 05 Nov 2013 11:09:25 -0300] c: archivo: /home/Zoom/sites/www/uploadzoom/propiedades/empresas/755328-departamento-las-condes-1.jpg 
+[Tue, 05 Nov 2013 11:09:25 -0300] c: final http://www.zoominmobiliario.com/uploadzoom/propiedades/empresas/755328-departamento-las-condes-1.jpg: 1 
+[Tue, 05 Nov 2013 11:09:25 -0300] c: ------------ 
+[Tue, 05 Nov 2013 11:09:25 -0300] n: lista imagen 20130927180109_321117.JPG;20130927180115_316912.JPG;20130927180057_323905.JPG;20130927180103_324518.JPG;20130927180051_320153.JPG;20130927180033_319161.JPG;20130927180040_323096.JPG;20130927180046_314290.JPG;755328-departamento-las-condes-1.jpg 
+[Tue, 05 Nov 2013 11:09:25 -0300] 5: uploaded 
+[Tue, 05 Nov 2013 11:09:25 -0300] 6: registrada 755328-departamento-las-condes-1.jpg 
+[Tue, 05 Nov 2013 11:28:13 -0300] 1: iniciando _img0 
+[Tue, 05 Nov 2013 11:28:13 -0300] 2: foreach 
+[Tue, 05 Nov 2013 11:28:13 -0300] 3: OK - 755328 -.-  
+[Tue, 05 Nov 2013 11:28:13 -0300] 4: img: /tmp/php9M4Ay1 
+[Tue, 05 Nov 2013 11:28:13 -0300] r: RESIZE:755328-departamento-las-condes-2.jpg 
+[Tue, 05 Nov 2013 11:28:13 -0300] c: jpg 
+[Tue, 05 Nov 2013 11:28:13 -0300] c: size: 1000,746 
+[Tue, 05 Nov 2013 11:28:13 -0300] c: temp: Resource id #23 
+[Tue, 05 Nov 2013 11:28:13 -0300] c: ruta:/home/Zoom/sites/www/uploadzoom/propiedades/empresas/ t:1 
+[Tue, 05 Nov 2013 11:28:13 -0300] c: archivo: /home/Zoom/sites/www/uploadzoom/propiedades/empresas/755328-departamento-las-condes-2.jpg 
+[Tue, 05 Nov 2013 11:28:13 -0300] c: final http://www.zoominmobiliario.com/uploadzoom/propiedades/empresas/755328-departamento-las-condes-2.jpg: 1 
+[Tue, 05 Nov 2013 11:28:13 -0300] c: ------------ 
+[Tue, 05 Nov 2013 11:28:13 -0300] n: lista imagen 20130927180109_321117.JPG;20130927180115_316912.JPG;20130927180057_323905.JPG;20130927180103_324518.JPG;20130927180051_320153.JPG;20130927180033_319161.JPG;20130927180040_323096.JPG;20130927180046_314290.JPG;755328-departamento-las-condes-1.jpg;755328-departamento-las-condes-2.jpg 
+[Tue, 05 Nov 2013 11:28:13 -0300] 5: uploaded 
+[Tue, 05 Nov 2013 11:28:13 -0300] 6: registrada 755328-departamento-las-condes-2.jpg 
+[Tue, 05 Nov 2013 12:02:18 -0300] 1: iniciando _img0 
+[Tue, 05 Nov 2013 12:02:18 -0300] 2: foreach 
+[Tue, 05 Nov 2013 12:02:18 -0300] 3: OK - 755328 -.-  
+[Tue, 05 Nov 2013 12:02:18 -0300] 4: img: /tmp/phpBkh1XK 
+[Tue, 05 Nov 2013 12:02:18 -0300] n: lista imagen 20130927180109_321117.JPG;20130927180115_316912.JPG;20130927180057_323905.JPG;20130927180103_324518.JPG;20130927180051_320153.JPG;20130927180033_319161.JPG;20130927180040_323096.JPG;20130927180046_314290.JPG;755328-departamento-las-condes-3.jpg 
+[Tue, 05 Nov 2013 12:02:18 -0300] 5: uploaded 
+[Tue, 05 Nov 2013 12:02:18 -0300] 6: registrada 755328-departamento-las-condes-3.jpg 
